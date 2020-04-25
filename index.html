@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>form</title>
+  </head>
+  <body>
+    <main>
+      <div id="title">
+        <h1>how you know me Survey Form</h1>
+        <p id="description">
+          Thank you for taking the time to let me know about us.
+        </p>
+      </div>
+      <div>
+        <form action="#" id="survey-form" autocomplete="on">
+          <label for="name" id="name-label">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your Name"
+          /><br /><br />
+          <label for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your Email"
+          /><br /><br />
+          <label for="age" id="number-label">Age</label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="15"
+            max="102"
+            placeholder="Age"
+          /><br /><br />
+          <label for="role">How you know me?</label><br /><br />
+          <select name="role" id="dropdown">
+            <option value="null" disabled selected>who are you!!</option>
+            <option value="School(devashish)">School(devashish)</option>
+            <option value="School(lotus)">School(lotus)</option>
+            <option value="College">College</option>
+            <option value="Coaching">Coaching</option>
+            <option value="society">society</option>
+            <option value="Reletive">Reletive</option>
+            <option value="Other">Other</option>
+          </select>
+          <p>Rate me on scale of 1 to 5</p>
+          <input type="radio" name="rate" id="one" value="one" />
+          <label for="one">1</label><br />
+          <input type="radio" name="rate" id="two" value="two" />
+          <label for="two">2</label><br /><input
+            type="radio"
+            name="rate"
+            id="three"
+            value="three"
+          />
+          <label for="three">3</label><br /><input
+            type="radio"
+            name="rate"
+            id="four"
+            value="four"
+          />
+          <label for="four">4</label><br /><input
+            type="radio"
+            name="rate"
+            id="five"
+            value="five"
+          />
+          <label for="five">5</label><br /><br />
+          <label for="when">When was the last time we met?</label><br /><br />
+          <select name="when" id="dropdown">
+            <option value="null" disabled selected>Select your option</option>
+            <option value="today">today</option>
+            <option value="a week ago">a week ago</option>
+            <option value="half a month ago">half a month ago</option>
+            <option value="a month ago">a month ago</option>
+            <option value="three months ago">three months ago</option>
+            <option value="six months ago">six months ago</option>
+            <option value="a year ago">a year ago</option>
+            <option value="a decade ago">a decade ago</option>
+            <option value="some specific time">some specific time</option>
+          </select>
+          <p>What do you like about me?</p>
+          <input type="checkbox" name="food" id="one" value="behaviour" />
+          <label for="one">behaviour</label><br />
+          <input type="checkbox" name="food" id="two" value="nature" />
+          <label for="two">nature</label><br />
+          <input type="checkbox" name="food" id="three" value="personality" />
+          <label for="three">personality</label><br />
+          <input type="checkbox" name="food" id="four" value="looks" />
+          <label for="four">looks (realy?)</label><br />
+          <input type="checkbox" name="food" id="five" value="attitude" />
+          <label for="five">attitude</label><br />
+          <input type="checkbox" name="food" id="six" value="nothing" />
+          <label for="six">nothing</label><br />
+          <p>Your message for me.</p>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea
+          ><br /><br />
+          <input type="submit" value="submit" />
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
