@@ -14,23 +14,23 @@
           Thank you for taking the time to let me know about us.
         </p>
       </div>
-      <div>
+      <div id="form">
         <form action="#" id="survey-form" autocomplete="on">
-          <label for="name" id="name-label">Name</label>
+          <label for="name" id="name-label">Name</label><br />
           <input
             type="text"
             name="name"
             id="name"
             placeholder="Enter your Name"
           /><br /><br />
-          <label for="email" id="email-label">Email</label>
+          <label for="email" id="email-label">Email</label><br />
           <input
             type="email"
             name="email"
             id="email"
             placeholder="Enter your Email"
           /><br /><br />
-          <label for="age" id="number-label">Age</label>
+          <label for="age" id="number-label">Age</label><br />
           <input
             type="number"
             name="age"
@@ -39,7 +39,7 @@
             max="102"
             placeholder="Age"
           /><br /><br />
-          <label for="role">How you know me?</label><br /><br />
+          <label for="role">How you know me?</label><br />
           <select name="role" id="dropdown">
             <option value="null" disabled selected>who are you!!</option>
             <option value="School(devashish)">School(devashish)</option>
@@ -50,6 +50,7 @@
             <option value="Reletive">Reletive</option>
             <option value="Other">Other</option>
           </select>
+          <br /><br />
           <p>Rate me on scale of 1 to 5</p>
           <input type="radio" name="rate" id="one" value="one" />
           <label for="one">1</label><br />
@@ -73,7 +74,7 @@
             value="five"
           />
           <label for="five">5</label><br /><br />
-          <label for="when">When was the last time we met?</label><br /><br />
+          <label for="when">When was the last time we met?</label><br />
           <select name="when" id="dropdown">
             <option value="null" disabled selected>Select your option</option>
             <option value="today">today</option>
@@ -84,8 +85,10 @@
             <option value="six months ago">six months ago</option>
             <option value="a year ago">a year ago</option>
             <option value="a decade ago">a decade ago</option>
-            <option value="some specific time">some specific time</option>
-          </select>
+            <option value="some specific time"
+              >some specific time</option
+            > </select
+          ><br /><br />
           <p>What do you like about me?</p>
           <input type="checkbox" name="food" id="one" value="behaviour" />
           <label for="one">behaviour</label><br />
@@ -98,7 +101,7 @@
           <input type="checkbox" name="food" id="five" value="attitude" />
           <label for="five">attitude</label><br />
           <input type="checkbox" name="food" id="six" value="nothing" />
-          <label for="six">nothing</label><br />
+          <label for="six">nothing</label><br /><br />
           <p>Your message for me.</p>
           <textarea name="message" id="message" cols="30" rows="10"></textarea
           ><br /><br />
