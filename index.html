@@ -18,6 +18,7 @@
         <form action="#" id="survey-form" autocomplete="on">
           <label for="name" id="name-label">Name</label><br />
           <input
+            class="box"
             type="text"
             name="name"
             id="name"
@@ -25,6 +26,7 @@
           /><br /><br />
           <label for="email" id="email-label">Email</label><br />
           <input
+            class="box"
             type="email"
             name="email"
             id="email"
@@ -32,6 +34,7 @@
           /><br /><br />
           <label for="age" id="number-label">Age</label><br />
           <input
+            class="box"
             type="number"
             name="age"
             id="number"
@@ -40,7 +43,7 @@
             placeholder="Age"
           /><br /><br />
           <label for="role">How you know me?</label><br />
-          <select name="role" id="dropdown">
+          <select name="role" id="dropdown" class="box">
             <option value="null" disabled selected>who are you!!</option>
             <option value="School(devashish)">School(devashish)</option>
             <option value="School(lotus)">School(lotus)</option>
@@ -75,7 +78,7 @@
           />
           <label for="five">5</label><br /><br />
           <label for="when">When was the last time we met?</label><br />
-          <select name="when" id="dropdown">
+          <select name="when" id="dropdown" class="box">
             <option value="null" disabled selected>Select your option</option>
             <option value="today">today</option>
             <option value="a week ago">a week ago</option>
@@ -103,8 +106,7 @@
           <input type="checkbox" name="food" id="six" value="nothing" />
           <label for="six">nothing</label><br /><br />
           <p>Your message for me.</p>
-          <textarea name="message" id="message" cols="30" rows="10"></textarea
-          ><br /><br />
+          <textarea name="message" id="message"></textarea><br /><br />
           <input type="submit" value="submit" />
         </form>
       </div>
