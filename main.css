@@ -51,7 +51,6 @@ body {
   height: 35px;
   border: #ccc4c4 solid 1px;
   border-radius: 3px;
-  /* transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; */
   font-family: inherit;
   font-size: 16px;
   padding: 0 0 0 10px;
@@ -90,4 +89,26 @@ input[type="checkbox"] {
   transform: scale(1.8);
   border: none;
   margin: 10px;
+}
+
+#other {
+  display: none;
+  margin: -35px 0 24px 0;
+}
+
+#specific_time {
+  display: none;
+  margin: -35px 0 24px 0;
+}
+
+input[type="submit"] {
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 3px;
+  background: #37af65;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  margin: 8px 0 25px 0;
 }

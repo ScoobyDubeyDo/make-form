@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
     <title>form</title>
+    <script src="./main.js" async></script>
   </head>
   <body>
     <main>
@@ -43,7 +44,12 @@
             placeholder="Age"
           /><br /><br />
           <label for="role">How you know me?</label><br />
-          <select name="role" id="dropdown" class="box">
+          <select
+            name="role"
+            id="dropdown1"
+            class="box"
+            onclick="others(this.value)"
+          >
             <option value="null" disabled selected>who are you!!</option>
             <option value="School(devashish)">School(devashish)</option>
             <option value="School(lotus)">School(lotus)</option>
@@ -54,6 +60,13 @@
             <option value="Other">Other</option>
           </select>
           <br /><br />
+          <input
+            class="box"
+            type="text"
+            name="other"
+            id="other"
+            placeholder="then how?"
+          />
           <p>Rate me on scale of 1 to 5</p>
           <input type="radio" name="rate" id="one" value="one" />
           <label for="one">1</label><br />
@@ -78,7 +91,12 @@
           />
           <label for="five">5</label><br /><br />
           <label for="when">When was the last time we met?</label><br />
-          <select name="when" id="dropdown" class="box">
+          <select
+            name="when"
+            id="dropdown"
+            class="box"
+            onclick="specific_times(this.value)"
+          >
             <option value="null" disabled selected>Select your option</option>
             <option value="today">today</option>
             <option value="a week ago">a week ago</option>
@@ -92,6 +110,13 @@
               >some specific time</option
             > </select
           ><br /><br />
+          <input
+            class="box"
+            type="text"
+            name="specific_time"
+            id="specific_time"
+            placeholder="When?"
+          />
           <p>What do you like about me?</p>
           <input type="checkbox" name="food" id="one" value="behaviour" />
           <label for="one">behaviour</label><br />
