@@ -24,6 +24,7 @@
             name="name"
             id="name"
             placeholder="Enter your Name"
+            required
           /><br /><br />
           <label for="email" id="email-label">Email</label><br />
           <input
@@ -32,6 +33,7 @@
             name="email"
             id="email"
             placeholder="Enter your Email"
+            required
           /><br /><br />
           <label for="age" id="number-label">Age</label><br />
           <input
@@ -48,9 +50,10 @@
             name="role"
             id="dropdown1"
             class="box"
+            required
             onclick="others(this.value)"
           >
-            <option value="null" disabled selected>who are you!!</option>
+            <option disabled selected value>who are you!!</option>
             <option value="School(devashish)">School(devashish)</option>
             <option value="School(lotus)">School(lotus)</option>
             <option value="College">College</option>
@@ -66,38 +69,30 @@
             name="other"
             id="other"
             placeholder="then how?"
+            required
           />
+
           <p>Rate me on scale of 1 to 5</p>
           <input type="radio" name="rate" id="one" value="one" />
           <label for="one">1</label><br />
           <input type="radio" name="rate" id="two" value="two" />
-          <label for="two">2</label><br /><input
-            type="radio"
-            name="rate"
-            id="three"
-            value="three"
-          />
-          <label for="three">3</label><br /><input
-            type="radio"
-            name="rate"
-            id="four"
-            value="four"
-          />
-          <label for="four">4</label><br /><input
-            type="radio"
-            name="rate"
-            id="five"
-            value="five"
-          />
+          <label for="two">2</label><br />
+          <input type="radio" name="rate" id="three" value="three" />
+          <label for="three">3</label><br />
+          <input type="radio" name="rate" id="four" value="four" />
+          <label for="four">4</label><br />
+          <input type="radio" name="rate" id="five" value="five" />
           <label for="five">5</label><br /><br />
+
           <label for="when">When was the last time we met?</label><br />
           <select
             name="when"
             id="dropdown"
             class="box"
+            required
             onclick="specific_times(this.value)"
           >
-            <option value="null" disabled selected>Select your option</option>
+            <option disabled selected value>Select your option</option>
             <option value="today">today</option>
             <option value="a week ago">a week ago</option>
             <option value="half a month ago">half a month ago</option>
@@ -116,6 +111,7 @@
             name="specific_time"
             id="specific_time"
             placeholder="When?"
+            required
           />
           <p>What do you like about me?</p>
           <input type="checkbox" name="food" id="one" value="behaviour" />
@@ -131,7 +127,13 @@
           <input type="checkbox" name="food" id="six" value="nothing" />
           <label for="six">nothing</label><br /><br />
           <p>Your message for me.</p>
-          <textarea name="message" id="message"></textarea><br /><br />
+          <textarea
+            name="message"
+            id="message"
+            required
+            placeholder="Tell me somthing."
+          ></textarea
+          ><br /><br />
           <input type="submit" value="submit" />
         </form>
       </div>
