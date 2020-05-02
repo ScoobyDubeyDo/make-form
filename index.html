@@ -51,7 +51,7 @@
             id="dropdown1"
             class="box"
             required
-            onclick="others(this.value)"
+            oninput="others(this.value)"
           >
             <option disabled selected value>who are you!!</option>
             <option value="School(devashish)">School(devashish)</option>
@@ -90,7 +90,7 @@
             id="dropdown"
             class="box"
             required
-            onclick="specific_times(this.value)"
+            oninput="specific_times(this.value)"
           >
             <option disabled selected value>Select your option</option>
             <option value="today">today</option>
@@ -130,8 +130,9 @@
           <textarea
             name="message"
             id="message"
-            required
             placeholder="Tell me somthing."
+            form="survey-form"
+            required
           ></textarea
           ><br /><br />
           <input type="submit" value="submit" />
