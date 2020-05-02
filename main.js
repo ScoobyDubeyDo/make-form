@@ -23,3 +23,9 @@ function hideselect() {
   var element = document.getElementById("dropdown");
   element.style.display = "none";
 }
+
+window.setTimeout(function () {
+  alert(
+    "This form does not gets any data to me ,so just don't type anything and press submit.If you really wants to show this to me then sent me a screeshot of this form filled"
+  );
+}, 100);
