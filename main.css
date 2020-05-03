@@ -139,6 +139,17 @@ input[type="checkbox"] {
     width: 100%;
     padding: 40px 15px;
   }
+
+  #after-submit {
+    width: 90%;
+    height: max-content;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) /* Tablet */ {
@@ -149,5 +160,16 @@ input[type="checkbox"] {
 
   #form {
     width: 100%;
+  }
+
+  #after-submit {
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
   }
 }

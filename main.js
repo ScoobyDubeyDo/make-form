@@ -48,4 +48,4 @@ window.setTimeout(function () {
   alert(
     "This form does not get any data to me ,so just don't type anything and press submit.If you really want to show this to me then send me a screenshot of this form filled."
   );
-}, 200);
+}, 400);
