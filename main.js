@@ -1,3 +1,8 @@
+document.getElementById("survey-form").onsubmit = function () {
+  submit();
+  return false;
+};
+
 function others(any) {
   var element = document.getElementById("other");
   if (any == "Other") {
@@ -20,6 +25,13 @@ function specific_times(any) {
     element.style.display = "none";
     element.disabled = true;
   }
+}
+
+function submit() {
+  var element = document.getElementById("main");
+  var element2 = document.getElementById("after-submit");
+  element.style.display = "none";
+  element2.style.display = "block";
 }
 
 function hideselect1() {

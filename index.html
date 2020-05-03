@@ -8,7 +8,7 @@
     <script src="./main.js" async></script>
   </head>
   <body>
-    <main>
+    <main id="main">
       <div id="title">
         <h1>how you know me Survey Form</h1>
         <p id="description">
@@ -59,7 +59,7 @@
             <option value="College">College</option>
             <option value="Coaching">Coaching</option>
             <option value="society">society</option>
-            <option value="Reletive">Reletive</option>
+            <option value="relative">relative</option>
             <option value="Other">Other</option>
           </select>
           <br /><br />
@@ -121,7 +121,7 @@
           <input type="checkbox" name="food" id="three" value="personality" />
           <label for="three">personality</label><br />
           <input type="checkbox" name="food" id="four" value="looks" />
-          <label for="four">looks (realy?)</label><br />
+          <label for="four">looks (really?)</label><br />
           <input type="checkbox" name="food" id="five" value="attitude" />
           <label for="five">attitude</label><br />
           <input type="checkbox" name="food" id="six" value="nothing" />
@@ -135,9 +135,15 @@
             required
           ></textarea
           ><br /><br />
-          <input type="submit" value="submit" />
+          <button type="submit" form="survey-form" value="Submit" id="submit">
+            Submit
+          </button>
         </form>
       </div>
     </main>
+    <div id="after-submit">
+      <h1>The form has been submited.</h1>
+      <p>Thanks for Letting me know you :)</p>
+    </div>
   </body>
 </html>
